@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Task1.css">
+</head>
+<body>
+
+    <div class="first">
+
+        <h2>CM to Feet</h2>
+        
+        <input type="text" id="input" placeholder="length in feet"><br>
+        
+        <button type="submit" onclick="coversation()">Convert to Feet</button>
+        
+        <div id="result"> </div>
+        
+    </div>
+
+
+    <script>
+        function coversation(){
+        let cmval= document.getElementById('input').value
+        let inchVal=cmval/30.48
+        let result=document.getElementById('result')
+        result.innerHTML=inchVal.toFixed(2)
+
+        }
+    </script>
+</body>
+</html>
